@@ -222,6 +222,16 @@ _core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.removeAttr = function (a
   }
   return this;
 };
+_core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.toggleAttr = function (attributeName, value) {
+  for (let i = 0; i < this.length; i++) {
+    if (this[i].hasAttribute(attributeName)) {
+      this[i].removeAttribute(attributeName);
+    } else {
+      this[i].setAttribute(attributeName, value);
+    }
+  }
+  return this;
+};
 
 /***/ }),
 
@@ -314,7 +324,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lib_lib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lib/lib */ "./src/js/lib/lib.js");
 
 Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('active').setAttr('test', 'hello');
-console.log(Object(_lib_lib__WEBPACK_IMPORTED_MODULE_0__["default"])('active').hasAttribute('test'));
 
 /***/ })
 
