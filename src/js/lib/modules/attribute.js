@@ -9,7 +9,7 @@ $.prototype.setAttr = function(attributeName, value) {
     }
 
     return this;
-}
+};
 
 $.prototype.getAttr = function(attributeName) {
     for (let i = 0; i < this.length; i++) {
@@ -20,7 +20,7 @@ $.prototype.getAttr = function(attributeName) {
     }
 
     return this;
-}
+};
 
 $.prototype.removeAttr = function(attributeName) {
     for (let i = 0; i < this.length; i++) {
@@ -31,7 +31,7 @@ $.prototype.removeAttr = function(attributeName) {
     }
 
     return this;
-}
+};
 
 $.prototype.toggleAttr = function(attributeName, value) {
     for (let i = 0; i < this.length; i++) {
@@ -43,4 +43,4 @@ $.prototype.toggleAttr = function(attributeName, value) {
     }
 
     return this;
-}
+};
