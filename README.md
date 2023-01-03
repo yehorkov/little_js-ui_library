@@ -1,1 +1,1 @@
-# little_js-ui_library
+# Little JavaScript UI library
